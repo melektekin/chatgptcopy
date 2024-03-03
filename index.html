@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT-Like Website</title>
+    <link rel="stylesheet" href="index.css"> <!-- CSS dosyasını bağlayın -->
+</head>
+<body class="body">
+    <!-- İçerik kısmı -->
+    <div class="container">
+        <button class="toggle-btn" onclick="toggleSidebar()">
+            <img src="logo5.png" alt="Toggle Icon">
+        </button>
+        <div id="comments"></div>
+        <form id="comment-form">
+            <textarea id="comment" placeholder="Message ChatGPT" required></textarea>
+            <button class="chatim" type="submit">Gönder</button>
+            
+        </form>
+    </div>
+    <div class="gizmo">
+        <p class="sol-ust-yazi"><b>ChatGPT</b></p>
+        <p class="sol-ust-yazi2"><b>3.5</b></p>
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" class="text-token-text-tertiary"><path d="M11.3346 7.83203L8.00131 11.1654L4.66797 7.83203" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </div>
+
+    <div class="content"></div>
+    
+    <div class="sidebar" id="sidebar">
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <div class="scrollable-content">
+                    <div class="sidebar2">
+                        <img src="logo.png">
+                        <h5>New chat</h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828z"/></svg>
+                    </div>
+                    <div class="sidebar3">
+                        <p class="paragraph1">Today</p>
+                        <p class="paragraph2 new-chat">
+                            <strong>New chat</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph1">Previous 7 Days</p>
+        
+                        <p class="paragraph2 new-chat">
+                            <strong>Perfect Website Creation Guide</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>New Chat</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Z Kuşağı ve Öğretmenlik</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>      
+                        <p class="paragraph1">Previous 30 Days</p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Software Learning Challenges</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Yardım Isteği Hakkında Konuşma</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Build "Hello World"Android App</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Linux Mint for Focus</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Software Work Hours</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Günlük Görevler Listesi</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Linux Mint for Softwaring</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Linux Mint Performance Optimiza</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Linux Mint for Programming</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>New Chat</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Functional App Development Gui</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Blender ile Neler Yapılır</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Open Flutter Terminal</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Remote Software Work Guide</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Button Center Shifted Fix</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Flutter for Mobile Development</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>New Chat</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                        <p class="paragraph2 new-chat">
+                            <strong>Add Multiple Buttons</strong>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M144 128a16 16 0 1 1-16-16a16 16 0 0 1 16 16m-84-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16m136 0a16 16 0 1 0 16 16a16 16 0 0 0-16-16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="36" height="30" x="6" y="12" rx="5" ry="5"/><path stroke-linecap="round" d="M17.95 24.008h12M6 13l7-8h22l7 8"/></g></svg>
+                            </span>
+                        </p>
+                    </div>
+
+                <div class="sidebar-footer">
+                    <button class="sidebar-footer-button sidebar-footer-button-svg">
+                        <span>
+                            <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                            <rect width="16" height="16" fill="none"/>
+                            <circle cx="12" cy="12" r="11" fill="none" stroke="grey" stroke-width="2"/>
+                            <path fill="currentColor" d="M12 1L9 9l-8 3l8 3l3 8l3-8l8-3l-8-3z"/></svg>
+                        </span>
+                        <div>
+                            <strong>Upgrade plan</strong>
+                            <p>Get GPT-4, DALL·E, and more</p>
+                        </div>
+                    </button>
+                    <button class="sidebar-footer-button">
+                        <span>
+                            <img class="mharfi" alt="User" width="32" height="32" src="https://lh3.googleusercontent.com/a/AGNmyxasfTJSPCUH-af0alyZAM_kcrsE-KHfFW0_Xc3UzA=s96-c">
+                        </span>
+                        <strong>melek</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script> <!-- JavaScript dosyasını bağlayın -->
+</body>
+</html>
